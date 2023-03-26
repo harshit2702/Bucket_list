@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1E718DD29CFFF9400222F60 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E718DC29CFFF9400222F60 /* Location.swift */; };
+		B1E718DF29D015BF00222F60 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E718DE29D015BF00222F60 /* EditView.swift */; };
 		B1F3E9B729CD654400F5E0B1 /* Bucket_listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */; };
 		B1F3E9B929CD654400F5E0B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E9B829CD654400F5E0B1 /* ContentView.swift */; };
 		B1F3E9BB29CD654700F5E0B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F3E9BA29CD654700F5E0B1 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		B1E718DC29CFFF9400222F60 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B1E718DE29D015BF00222F60 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		B1F3E9B329CD654400F5E0B1 /* Bucket list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucket list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket_listApp.swift; sourceTree = "<group>"; };
 		B1F3E9B829CD654400F5E0B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */,
 				B1F3E9B829CD654400F5E0B1 /* ContentView.swift */,
+				B1E718DE29D015BF00222F60 /* EditView.swift */,
 				B1E718DC29CFFF9400222F60 /* Location.swift */,
 				B1F3E9BA29CD654700F5E0B1 /* Assets.xcassets */,
 				B1F3E9BC29CD654700F5E0B1 /* Bucket_list.entitlements */,
@@ -144,6 +147,7 @@
 			files = (
 				B1F3E9B929CD654400F5E0B1 /* ContentView.swift in Sources */,
 				B1E718DD29CFFF9400222F60 /* Location.swift in Sources */,
+				B1E718DF29D015BF00222F60 /* EditView.swift in Sources */,
 				B1F3E9B729CD654400F5E0B1 /* Bucket_listApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
