@@ -22,6 +22,7 @@ struct ContentView: View {
             Map(coordinateRegion: $mapRegion)
                 .edgesIgnoringSafeArea(.all)
             
+            
             Circle()
                 .stroke(.blue,lineWidth: 3)
                 .opacity(0.6)
