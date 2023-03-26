@@ -8,7 +8,7 @@ import LocalAuthentication
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isUnlocked = true
+    @State private var isUnlocked = false
     
     var body: some View {
         VStack {
@@ -19,6 +19,7 @@ struct ContentView: View {
             }
         }
         .padding()
+        .onAppear(perform: authenticate)
     }
     
     
