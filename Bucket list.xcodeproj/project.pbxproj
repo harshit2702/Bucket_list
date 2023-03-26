@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18C4CD029D04191007A3757 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C4CCF29D04191007A3757 /* Result.swift */; };
 		B1E718DD29CFFF9400222F60 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E718DC29CFFF9400222F60 /* Location.swift */; };
 		B1E718DF29D015BF00222F60 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E718DE29D015BF00222F60 /* EditView.swift */; };
 		B1F3E9B729CD654400F5E0B1 /* Bucket_listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B18C4CCF29D04191007A3757 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B1E718DC29CFFF9400222F60 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B1E718DE29D015BF00222F60 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		B1F3E9B329CD654400F5E0B1 /* Bucket list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucket list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,7 @@
 			children = (
 				B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */,
 				B1F3E9B829CD654400F5E0B1 /* ContentView.swift */,
+				B18C4CCF29D04191007A3757 /* Result.swift */,
 				B1E718DE29D015BF00222F60 /* EditView.swift */,
 				B1E718DC29CFFF9400222F60 /* Location.swift */,
 				B1F3E9BA29CD654700F5E0B1 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3E9B929CD654400F5E0B1 /* ContentView.swift in Sources */,
+				B18C4CD029D04191007A3757 /* Result.swift in Sources */,
 				B1E718DD29CFFF9400222F60 /* Location.swift in Sources */,
 				B1E718DF29D015BF00222F60 /* EditView.swift in Sources */,
 				B1F3E9B729CD654400F5E0B1 /* Bucket_listApp.swift in Sources */,
