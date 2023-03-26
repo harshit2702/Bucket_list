@@ -12,23 +12,39 @@ struct Location: Identifiable{
     let coordinate: CLLocationCoordinate2D
 }
 struct ContentView: View {
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: -0.12), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 27.582256, longitude: 77.697083), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 15))
     
     let locations = [
-        Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)),
-        Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076))
+        Location(name: "Banke Bihari Temple", coordinate: CLLocationCoordinate2D(latitude: 27.582256, longitude: 77.697083)),
     ]
     var body: some View {
-        Map(coordinateRegion: $mapRegion,annotationItems: locations){ locations in
-            MapAnnotation(coordinate: locations.coordinate){
-                Circle()
-                    .stroke(.red,lineWidth: 3)
-                    .onTapGesture {
-                        print("Tapped on \(locations.name)")
+        ZStack {
+            Map(coordinateRegion: $mapRegion)
+                .edgesIgnoringSafeArea(.all)
+            
+            Circle()
+                .stroke(.blue,lineWidth: 3)
+                .opacity(0.6)
+                .frame(width: 22,height: 22)
+            
+            VStack{
+                Spacer()
+                HStack{
+                    Spacer()
+                    Button{
+                        
+                    }label: {
+                        Image(systemName: "plus")
                     }
+                    .padding()
+                    .background(.black.opacity(0.4))
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
+                    .padding(.trailing)
+                }
             }
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
