@@ -6,33 +6,30 @@
 //
 import MapKit
 import SwiftUI
-struct Location: Identifiable{
-    let id = UUID()
-    let name: String
-    let coordinate: CLLocationCoordinate2D
-}
+
 struct ContentView: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 27.582256, longitude: 77.697083), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 15))
-    
-    let locations = [
-        Location(name: "Banke Bihari Temple", coordinate: CLLocationCoordinate2D(latitude: 27.582256, longitude: 77.697083)),
-    ]
+    @State private var location = [Location]()
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $mapRegion)
+            Map(coordinateRegion: $mapRegion, annotationItems: location){location in
+                MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
+            }
                 .edgesIgnoringSafeArea(.all)
             
+            
             Circle()
-                .stroke(.blue,lineWidth: 3)
-                .opacity(0.6)
-                .frame(width: 22,height: 22)
+                .stroke(.blue,lineWidth: 5)
+                .opacity(0.4)
+                .frame(width: 11,height: 11)
             
             VStack{
                 Spacer()
                 HStack{
                     Spacer()
                     Button{
-                        
+                        let newLocation = Location(name: "New Location", discription: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
+                        location.append(newLocation)
                     }label: {
                         Image(systemName: "plus")
                     }
