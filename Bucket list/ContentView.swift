@@ -38,7 +38,7 @@ struct ContentView: View {
             
             
             Circle()
-                .stroke(.blue,lineWidth: 5)
+                .foregroundColor(.blue)
                 .opacity(0.4)
                 .frame(width: 44,height: 44)
             
