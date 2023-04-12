@@ -8,13 +8,11 @@ import MapKit
 import SwiftUI
 
 struct ContentView: View {
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 27.582256, longitude: 77.697083), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 15))
-    @State private var location = [Location]()
-    @State private var selectedPlaces: Location?
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $mapRegion, annotationItems: location){location in
+            Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.location){location in
                 MapAnnotation(coordinate: location.coordinates ){
                     VStack{
                         Image(systemName: "star.circle")
@@ -30,7 +28,7 @@ struct ContentView: View {
                         
                     }
                     .onTapGesture {
-                        selectedPlaces = location
+                        viewModel.selectedPlaces = location
                     }
                 }
             }
@@ -47,8 +45,7 @@ struct ContentView: View {
                 HStack{
                     Spacer()
                     Button{
-                        let newLocation = Location(name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
-                        location.append(newLocation)
+                        viewModel.addLocation()
                     }label: {
                         Image(systemName: "plus")
                     }
@@ -62,11 +59,9 @@ struct ContentView: View {
             }
             
         }
-        .sheet(item: $selectedPlaces){place in
+        .sheet(item: $viewModel.selectedPlaces){place in
             EditView(location: place){newlocation in
-                if let index = location.firstIndex(of: place){
-                    location[index] = newlocation
-                }
+                viewModel.update(newlocation:  newlocation)
             }
         }
     }

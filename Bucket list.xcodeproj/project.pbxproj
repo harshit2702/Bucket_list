@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B18C4CD029D04191007A3757 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C4CCF29D04191007A3757 /* Result.swift */; };
+		B1A5441B29E74D1A005A8271 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5441A29E74D1A005A8271 /* ContentView-ViewModel.swift */; };
+		B1A5441D29E75156005A8271 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5441C29E75156005A8271 /* FileManager-DocumentDirectory.swift */; };
 		B1E718DD29CFFF9400222F60 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E718DC29CFFF9400222F60 /* Location.swift */; };
 		B1E718DF29D015BF00222F60 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E718DE29D015BF00222F60 /* EditView.swift */; };
 		B1F3E9B729CD654400F5E0B1 /* Bucket_listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		B18C4CCF29D04191007A3757 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B1A5441A29E74D1A005A8271 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		B1A5441C29E75156005A8271 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
 		B1E718DC29CFFF9400222F60 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B1E718DE29D015BF00222F60 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		B1F3E9B329CD654400F5E0B1 /* Bucket list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucket list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +64,8 @@
 			children = (
 				B1F3E9B629CD654400F5E0B1 /* Bucket_listApp.swift */,
 				B1F3E9B829CD654400F5E0B1 /* ContentView.swift */,
+				B1A5441A29E74D1A005A8271 /* ContentView-ViewModel.swift */,
+				B1A5441C29E75156005A8271 /* FileManager-DocumentDirectory.swift */,
 				B18C4CCF29D04191007A3757 /* Result.swift */,
 				B1E718DE29D015BF00222F60 /* EditView.swift */,
 				B1E718DC29CFFF9400222F60 /* Location.swift */,
@@ -149,9 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3E9B929CD654400F5E0B1 /* ContentView.swift in Sources */,
+				B1A5441B29E74D1A005A8271 /* ContentView-ViewModel.swift in Sources */,
 				B18C4CD029D04191007A3757 /* Result.swift in Sources */,
 				B1E718DD29CFFF9400222F60 /* Location.swift in Sources */,
 				B1E718DF29D015BF00222F60 /* EditView.swift in Sources */,
+				B1A5441D29E75156005A8271 /* FileManager-DocumentDirectory.swift in Sources */,
 				B1F3E9B729CD654400F5E0B1 /* Bucket_listApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
